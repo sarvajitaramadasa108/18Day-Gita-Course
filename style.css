@@ -1,0 +1,307 @@
+/* =========================
+   GLOBAL
+========================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:#faf7f0;
+    color:#333;
+    line-height:1.7;
+}
+
+/* =========================
+   HERO SECTION
+========================= */
+
+.hero{
+    position:relative;
+    min-height:100vh;
+    background:url('https://iskconwhitefield.org/wp-content/uploads/2025/03/arjuna-krishna-blowing-conchshells.webp') center center/cover no-repeat;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    color:white;
+}
+
+.overlay{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.60);
+}
+
+.hero-content{
+    position:relative;
+    z-index:2;
+    max-width:900px;
+    padding:20px;
+}
+
+.hero-content h3{
+    font-size:1.3rem;
+    font-weight:500;
+    margin-bottom:15px;
+    color:#ffd166;
+}
+
+.hero-content h1{
+    font-size:3.5rem;
+    line-height:1.2;
+    margin-bottom:20px;
+}
+
+.hero-content p{
+    font-size:1.2rem;
+    margin-bottom:30px;
+}
+
+/* =========================
+   BATCH DATE BOX
+========================= */
+
+.batch-box{
+    background:rgba(255,255,255,0.15);
+    backdrop-filter:blur(10px);
+    border:1px solid rgba(255,255,255,0.2);
+    border-radius:20px;
+    padding:25px;
+    margin:30px auto;
+    max-width:400px;
+}
+
+.batch-box h2{
+    font-size:1.2rem;
+    margin-bottom:10px;
+}
+
+#batchDate{
+    font-size:1.8rem;
+    font-weight:700;
+    color:#ffd166;
+}
+
+/* =========================
+   BUTTONS
+========================= */
+
+.btn{
+    display:inline-block;
+    background:#ff8c00;
+    color:white;
+    text-decoration:none;
+    padding:15px 35px;
+    border-radius:50px;
+    font-size:1rem;
+    font-weight:600;
+    transition:0.3s;
+}
+
+.btn:hover{
+    background:#e67e00;
+    transform:translateY(-2px);
+}
+
+/* =========================
+   SECTIONS
+========================= */
+
+.section{
+    padding:80px 20px;
+}
+
+.light{
+    background:#fff;
+}
+
+.container{
+    max-width:1200px;
+    margin:auto;
+}
+
+.section h2{
+    text-align:center;
+    margin-bottom:40px;
+    color:#1d3557;
+    font-size:2.3rem;
+}
+
+.section p{
+    max-width:900px;
+    margin:auto;
+    text-align:center;
+    margin-bottom:20px;
+}
+
+/* =========================
+   CARDS
+========================= */
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:25px;
+    margin-top:40px;
+}
+
+.card{
+    background:white;
+    padding:30px;
+    border-radius:20px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.08);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+}
+
+.card h3{
+    color:#e67e22;
+    margin-bottom:10px;
+}
+
+.card p{
+    text-align:left;
+    margin:0;
+}
+
+/* =========================
+   HIGHLIGHTS
+========================= */
+
+.highlights{
+    max-width:800px;
+    margin:auto;
+    list-style:none;
+}
+
+.highlights li{
+    background:white;
+    margin-bottom:15px;
+    padding:18px;
+    border-left:5px solid #ff8c00;
+    border-radius:10px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.05);
+}
+
+/* =========================
+   FORM
+========================= */
+
+.register-section{
+    background:linear-gradient(
+        135deg,
+        #fdf6e3,
+        #fff8e7
+    );
+}
+
+form{
+    background:white;
+    padding:40px;
+    border-radius:25px;
+    box-shadow:0 10px 40px rgba(0,0,0,0.08);
+}
+
+.form-grid{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:20px;
+}
+
+input,
+select,
+textarea{
+    width:100%;
+    padding:15px;
+    border:1px solid #ddd;
+    border-radius:10px;
+    font-size:1rem;
+    font-family:'Poppins',sans-serif;
+}
+
+textarea{
+    margin-top:20px;
+    resize:vertical;
+}
+
+.submit-btn{
+    border:none;
+    cursor:pointer;
+    margin-top:25px;
+    width:100%;
+}
+
+#message{
+    margin-top:20px;
+    text-align:center;
+    font-weight:600;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer{
+    background:#1d3557;
+    color:white;
+    text-align:center;
+    padding:50px 20px;
+}
+
+footer h3{
+    margin-bottom:15px;
+}
+
+footer p{
+    margin-bottom:10px;
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media(max-width:768px){
+
+    .hero-content h1{
+        font-size:2.2rem;
+    }
+
+    .hero-content p{
+        font-size:1rem;
+    }
+
+    .form-grid{
+        grid-template-columns:1fr;
+    }
+
+    .section{
+        padding:60px 15px;
+    }
+
+    .section h2{
+        font-size:1.8rem;
+    }
+
+    form{
+        padding:25px;
+    }
+
+    #batchDate{
+        font-size:1.4rem;
+    }
+
+}
